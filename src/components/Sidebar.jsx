@@ -35,7 +35,7 @@ export default function Sidebar() {
         router.push('/videocallpop');
         break;
       case 'members':
-        router.push('/members');
+        router.push('/member');
         break;
       default:
         router.push('/');
@@ -90,3 +90,4 @@ export default function Sidebar() {
     </div>
   );
 }
+
