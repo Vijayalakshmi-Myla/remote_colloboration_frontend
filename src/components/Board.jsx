@@ -13,7 +13,6 @@ import { updateTask } from "@/lib/api/tasksApi";
 import ListColumn from "./ListColumn";
 import ListForm from "./ListForm";
 import ChatPanel from "./ChatPanel";
-import Members from "./Members"
 
 export default function Board({ boardId }) {
   const [lists, setLists] = useState([]);
@@ -202,7 +201,7 @@ export default function Board({ boardId }) {
 
   return (
     <div className="p-4 overflow-x-auto">
-      <Members />
+    
       <div className="mb-4">
         <ListForm onSubmit={handleAddList} placeholder="New list name" />
       </div>
@@ -250,3 +249,4 @@ export default function Board({ boardId }) {
     </div>
   );
 }
+
